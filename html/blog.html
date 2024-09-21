@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ritesh Jadhav| Work Experience, Courses, Internships.">
+    <meta name="theme-color" content="#8D24DF"/>
+    <link rel="icon" href="/assets/images/Blog-Purple.svg" type="image/svg+xml">
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="/css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="/css/phone.css" />
+    <script src="/js/mode.js"></script>
+    <title>Blog</title>
+</head>
+<body style="background-image: url(/assets/images/BG-Blog-min.webp); background-size: cover;">
+    <!-- navbar -->
+    <div class = "navbar">
+        <ul>
+            <li><a href="/index.html" title="Home | Press Key 1"><img src="/assets/images/Home.svg" id="home"  alt="Ritesh Jadhav | Home Logo"></a></li>
+            <li><a href="project.html" title="Projects | Press Key 2"><img src="/assets/images/Projects.svg" id="projects"  alt="Ritesh Jadhav | Project Logo"></a></li>
+            <li id="active"><a href="blog.html" title="Blog | Press Key 3"><img src="/assets/images/Blog-Purple.svg"  alt="Ritesh Jadhav | Blog Logo"></a></li>
+            <li><a href="contact.html" title="Connect | Press Key 4"><img src="/assets/images/Connect.svg" id="connect"  alt="Ritesh Jadhav | Contact Logo"></a></li>
+        </ul>
+    </div>
+    <!-- pane -->
+    <button type="button" id="menu" onclick="blog_menu()">☰</button>
+    <div class="pane" id="pane">
+        <div class="heading">
+            <h1>Experience</h1><h3>Total: <b><span id = "total"></span></b></h3>
+        </div>
+        <div class="pane-project-container" id="pane_container">
+ 
+            <div class="pane-project" id="vit">
+                <img src="/assets/images/Icon-CCPS.svg"  alt="Ritesh Jadhav | VIT Logo">
+                <h2>Vellore Institute of Technology</h2>
+            </div>
+            <div class="pane-project" id="ccps">
+                <img src="/assets/images/Icon-CCPS.svg"  alt="Ritesh Jadhav | VIT Logo">
+                <h2>Research Paper, VITC</h2>
+            </div>
+            <div class="pane-project" id="technovit">
+                <img src="/assets/images/wiingy.jpeg"  alt="Ritesh Jadhav | wiingy logo">
+                <h2>Wiingy Internship</h2>
+            </div>
+            <div class="pane-project" id="apac">
+                <img src="/assets/images/cloud.jpeg"  alt="Ritesh Jadhav | Google cloud">
+                <h2>Google cloud courses</h2>
+            </div>
+            <div class="pane-project" id="tkd">
+                <img src="/assets/images/ethnus.jpeg" alt="Ritesh Jadhav | Ethnus-MERN">
+                <h2>Ethnus-MERN</h2>
+            </div>
+            <!DOCTYPE html>
+            <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Circle Image</title>
+                    <style>
+                    .pane-project {
+                        text-align: center; /* Center align content */
+                    }
+                    .pane-project img {
+                        width: 60px; /* Adjust size as needed */
+                        height:60px; /* Adjust size as needed */
+                        border-radius: 60%; /* Make it round */
+                        overflow: hidden; /* Hide overflow */
+                    }
+                    </style>
+                </head>
+<body>
+</body>
+</html>
+
+        </div>
+    </div>
+    <!-- project detail -->
+    <div class="project-detail" id="project-detail">
+        <div class="nav-buttons">
+            <button id="back" title="Back | Press Left Arrow Key" onclick="back()">Back</button>
+            <button id="next" title="Next | Press Right Arrow Key" onclick="next()">Next</button>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <img src="/assets/images/Blog-Purple.svg" alt="" id="main-image"  alt="Ritesh Jadhav | Main Image">
+        <h1 id = "title">Experience</h1>
+        <h3 id = "byline"><--Here are some of my experiences that I'd love to share with you.</h3>
+    </div>
+ <!-- helpbox -->
+    <div class="helpbox" id="helpbox">
+        <div class="helpbox_content" id="helpbox_content">
+          <h1>Keyboard Combos <b id="heading_bold">/</b></h1>  
+          <p>Navigate the Menu-NavBar<br><b>1</b><b>2</b><b>3</b><b>4</b><br><br>Toggle Light/Dark Mode<br><b>t</b><br><br>Go Back/Next (Projects & Blog)<br><b>⬅</b><b>➡</b><br><br>Scroll Up/Down (Projects & Blog)<br><b>⬆</b><b>⬇</b></p>
+        </div>
+    </div>
+    <script>
+        function blog_menu() 
+        {
+            let toggle = document.getElementById("pane");
+            if (toggle.style.visibility == "visible") 
+            {
+                toggle.style.visibility = "hidden";
+                console.log(toggle.style.visibility);
+            }
+            else {
+                toggle.style.visibility = "visible";
+                console.log(toggle.style.visibility);
+            }
+        }
+
+        elements = document.getElementsByClassName("pane-project");
+        document.getElementById("total").innerHTML = elements.length;
+    </script>
+    <script src="/js/blog.js"></script>
+</body>
+</html>

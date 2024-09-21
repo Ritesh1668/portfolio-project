@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ritesh Jadhav | 22-year-old Developer, Programmer, competitive coder; A motivated, innovative colleague and leader with a strong will to learn, develop, and acquire new skills."
+    />
+    <meta name="theme-color" content="#8D24DF" />
+    <link
+      rel="icon"
+      href="/assets/images/Home-Purple.svg"
+      type="image/svg+xml"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 768px)"
+      href="/css/style.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 768px)"
+      href="css/phone.css"
+    />
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var homeSocialLinks = document.querySelectorAll("#home_social a");
+        homeSocialLinks.forEach(function (link) {
+          link.setAttribute("target", "_blank");
+        });
+      });
+    </script>
+    <script src="/js/mode.js"></script>
+    <title>Home</title>
+  </head>
+
+  <body
+    style="
+      background-image: url(/assets/images/BG-Home-min.webp);
+      background-size: cover;
+    "
+  >
+    <div class="home-page">
+      <!-- navbar -->
+      <div class="navbar">
+        <ul>
+          <li id="active">
+            <a href="index.html" title="Home | Press Key 1"
+              ><img
+                src="/assets/images/Home-Purple.svg"
+                id="home"
+                alt="Ritesh Jadhav | Home Logo"
+            /></a>
+          </li>
+          <li>
+            <a href="/html/project.html" title="Projects | Press Key 2"
+              ><img
+                src="/assets/images/Projects.svg"
+                id="projects"
+                alt="Ritesh Jadhav | Project Logo"
+            /></a>
+          </li>
+          <li>
+            <a href="/html/blog.html" title="Blog | Press Key 3"
+              ><img
+                src="/assets/images/Blog.svg"
+                id="blog"
+                alt="Ritesh Jadhav | Blog Logo"
+            /></a>
+          </li>
+          <li>
+            <a href="/html/contact.html" title="Connect | Press Key 4"
+              ><img
+                src="/assets/images/Connect.svg"
+                id="connect"
+                alt="Ritesh Jadhav | Contact Logo"
+            /></a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- home left  -->
+      <div class="home_left">
+        <img
+          src="/assets/images/profile-pic.webp"
+          id="DP"
+          alt="Ritesh Jadhav | Self Image"
+          style="border-radius: 100%"
+        />
+        <div class="home_tagline" id="home_tagline">
+          <img
+            id="tagline_logo"
+            src="/assets/images/wiingy.png"
+            alt="Baker Hughes Logo"
+          />
+          <p>
+            Intern'23 @
+            <a href="/html/blog.html#baker_hughes" style="text-decoration: none"
+              >wiingy</a
+            >
+          </p>
+        </div>
+        <br />
+        <div class="home_tagline" id="home_tagline">
+          <img
+            id="tagline_logo"
+            src="/assets/images/Icon-CCPS.svg"
+            alt="VIT Logo"
+            style="scale: 1.1"
+          />
+          <p>
+            B.Tech - CSE @
+            <a href="/html/blog.html#vit" style="text-decoration: none"
+              >VIT Chennai</a
+            >
+          </p>
+        </div>
+        <div class="home_social" id="home_social">
+          <ul>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/ritesh-jadhav-4a0801230/"
+                title="LinkedIn"
+                ><img
+                  src="/assets/images/LinkedIn.png"
+                  alt="Ritesh Jadhav | LinkedIn Logo"
+                  id="LinkedIn"
+              /></a>
+            </li>
+            <li>
+              <a href="https://github.com/Ritesh1668" title="GitHub"
+                ><img
+                  src="/assets/images/GitHub.png"
+                  alt="Ritesh Jadhav | GitHub Logo"
+                  id="GitHub"
+              /></a>
+            </li>
+            <li>
+              <a href="riteshsjadhav5088@gmail.com" title="Gmail"
+                ><img
+                  src="/assets/images/Dribbble.png"
+                  alt="Ritesh Jadhav | Dribbble Logo"
+                  id="Dribbble"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://drive.google.com/file/d/1Cy1mfm8LBICEW--oS5qCuI-93_avHRbE/view?usp=sharing"
+                title="CV | Resume"
+                ><img
+                  src="/assets/images/CV.svg"
+                  alt="Ritesh Jadhav | Resume Logo"
+                  id="resume"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- home right  -->
+      <div class="home_right">
+        <div class="toggle" id="top_right">
+          <input
+            type="checkbox"
+            id="toggle"
+            class="toggle--checkbox"
+            onclick="change()"
+          />
+          <label
+            for="toggle"
+            class="toggle--label"
+            title="Toggle | Press Key t"
+          >
+            <span class="toggle--label-background"></span>
+          </label>
+        </div>
+        <h2>Hey There!&#128075;</h2>
+        <h1>
+          I'm<strong id="name"> Ritesh Jadhav</strong
+          ><sup id="pronouns"> (He/Him)</sup>
+        </h1>
+        <p>
+          I’m a <span id="age"></span>22-year-old Developer, Programmer,
+          competitive coder; A motivated, innovative colleague and leader with a
+          strong will to learn, develop, and acquire new skills. <br /><br />
+          Currently involved in numerous projects including, Artificial
+          Intelligence and Machine Learning, Application and Web Development,
+          Blockchain, Digital Iamge processing and much more. I'd love it if you
+          could head on to the <a href="/html/project.html">projects page</a>,
+          take a look at the various projects I've been working on and, share
+          your reviews with me! <br /><br />
+          I'm experienced in various programming languages - Python, C, C++,
+          Java, JavaScript, HTML, CSS, MATLAB, R, SQL and more. I’m passionate
+          about computer sciences and always eager to collaborate on new
+          projects, so free to <a href="/html/contact.html">connect</a> with me.
+        </p>
+      </div>
+    </div>
+
+    <!-- helpbox -->
+    <div class="helpbox" id="helpbox">
+      <div class="helpbox_content" id="helpbox_content">
+        <h1>Keyboard Combos <b id="heading_bold">/</b></h1>
+        <p>
+          Navigate the Menu-NavBar<br /><b>1</b><b>2</b><b>3</b><b>4</b
+          ><br /><br />Toggle Light/Dark Mode<br /><b>t</b><br /><br />Go
+          Back/Next (Projects & Blog)<br /><b>⬅</b><b>➡</b><br /><br />Scroll
+          Up/Down (Projects & Blog)<br /><b>⬆</b><b>⬇</b>
+        </p>
+      </div>
+    </div>
+
+    <!-- popup -->
+    <div class="popup" id="popup">
+      <div class="popup_content" id="popup_content">
+        <h1>&#128064; Pssst</h1>
+        <p>Press the <b>/</b> Forward slash key</p>
+      </div>
+    </div>
+  </body>
+</html>
